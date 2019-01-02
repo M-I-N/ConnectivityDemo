@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AFE83C5221DD212C00A4FC2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE83C5121DD212C00A4FC2C /* AppDelegate.swift */; };
-		AFE83C5421DD212C00A4FC2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE83C5321DD212C00A4FC2C /* ViewController.swift */; };
+		AFE83C5421DD212C00A4FC2C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE83C5321DD212C00A4FC2C /* FirstViewController.swift */; };
 		AFE83C5721DD212C00A4FC2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE83C5521DD212C00A4FC2C /* Main.storyboard */; };
 		AFE83C5921DD212F00A4FC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE83C5821DD212F00A4FC2C /* Assets.xcassets */; };
 		AFE83C5C21DD212F00A4FC2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE83C5A21DD212F00A4FC2C /* LaunchScreen.storyboard */; };
+		AFE83C6421DD242500A4FC2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE83C6321DD242500A4FC2C /* SecondViewController.swift */; };
 		C83B098E6792DF960CDB4DAF /* Pods_ConnectivityDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B6C817DFAA4ED920F3D9A0 /* Pods_ConnectivityDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		95B6C817DFAA4ED920F3D9A0 /* Pods_ConnectivityDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectivityDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE83C4E21DD212C00A4FC2C /* ConnectivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE83C5121DD212C00A4FC2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFE83C5321DD212C00A4FC2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFE83C5321DD212C00A4FC2C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		AFE83C5621DD212C00A4FC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFE83C5821DD212F00A4FC2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFE83C5B21DD212F00A4FC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE83C5D21DD212F00A4FC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE83C6321DD242500A4FC2C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C209216C808756303A8154E7 /* Pods-ConnectivityDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectivityDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectivityDemo/Pods-ConnectivityDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				AFE83C5121DD212C00A4FC2C /* AppDelegate.swift */,
-				AFE83C5321DD212C00A4FC2C /* ViewController.swift */,
+				AFE83C5321DD212C00A4FC2C /* FirstViewController.swift */,
+				AFE83C6321DD242500A4FC2C /* SecondViewController.swift */,
 				AFE83C5521DD212C00A4FC2C /* Main.storyboard */,
 				AFE83C5821DD212F00A4FC2C /* Assets.xcassets */,
 				AFE83C5A21DD212F00A4FC2C /* LaunchScreen.storyboard */,
@@ -200,7 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE83C5421DD212C00A4FC2C /* ViewController.swift in Sources */,
+				AFE83C6421DD242500A4FC2C /* SecondViewController.swift in Sources */,
+				AFE83C5421DD212C00A4FC2C /* FirstViewController.swift in Sources */,
 				AFE83C5221DD212C00A4FC2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +356,10 @@
 				DEVELOPMENT_TEAM = EJHMZ3UG6B;
 				INFOPLIST_FILE = ConnectivityDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayem.ConnectivityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -369,7 +376,10 @@
 				DEVELOPMENT_TEAM = EJHMZ3UG6B;
 				INFOPLIST_FILE = ConnectivityDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayem.ConnectivityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
