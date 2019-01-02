@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Connectivity
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, ConnectivityNotifiable {
+    
+    let connectivity = Connectivity()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +22,23 @@ class FirstViewController: UIViewController {
             // Fallback on earlier versions
         }
         title = "Home"
+        startNotifyingConnectivityChangeStatus()
+    }
+    
+    deinit {
+        stopNotifyingConnectivityChangeStatus()
     }
 
+    func connectivityChanged(toStatus: ConnectivityStatus) {
+        switch toStatus {
+            
+        case .connected, .connectedViaWiFi, .connectedViaCellular:
+            navigationController?.navigationBar.barTintColor = .green
+        
+        case .notConnected, .connectedViaWiFiWithoutInternet, .connectedViaCellularWithoutInternet:
+            navigationController?.navigationBar.barTintColor = .red
+        }
+    }
 
 }
 

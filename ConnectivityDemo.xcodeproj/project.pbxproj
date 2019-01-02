@@ -13,6 +13,7 @@
 		AFE83C5921DD212F00A4FC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE83C5821DD212F00A4FC2C /* Assets.xcassets */; };
 		AFE83C5C21DD212F00A4FC2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE83C5A21DD212F00A4FC2C /* LaunchScreen.storyboard */; };
 		AFE83C6421DD242500A4FC2C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE83C6321DD242500A4FC2C /* SecondViewController.swift */; };
+		AFE83C6621DD337D00A4FC2C /* ConnectivityNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE83C6521DD337D00A4FC2C /* ConnectivityNotifiable.swift */; };
 		C83B098E6792DF960CDB4DAF /* Pods_ConnectivityDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B6C817DFAA4ED920F3D9A0 /* Pods_ConnectivityDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		AFE83C5B21DD212F00A4FC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE83C5D21DD212F00A4FC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE83C6321DD242500A4FC2C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		AFE83C6521DD337D00A4FC2C /* ConnectivityNotifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityNotifiable.swift; sourceTree = "<group>"; };
 		C209216C808756303A8154E7 /* Pods-ConnectivityDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectivityDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConnectivityDemo/Pods-ConnectivityDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				AFE83C5121DD212C00A4FC2C /* AppDelegate.swift */,
 				AFE83C5321DD212C00A4FC2C /* FirstViewController.swift */,
 				AFE83C6321DD242500A4FC2C /* SecondViewController.swift */,
+				AFE83C6521DD337D00A4FC2C /* ConnectivityNotifiable.swift */,
 				AFE83C5521DD212C00A4FC2C /* Main.storyboard */,
 				AFE83C5821DD212F00A4FC2C /* Assets.xcassets */,
 				AFE83C5A21DD212F00A4FC2C /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 				AFE83C6421DD242500A4FC2C /* SecondViewController.swift in Sources */,
 				AFE83C5421DD212C00A4FC2C /* FirstViewController.swift in Sources */,
 				AFE83C5221DD212C00A4FC2C /* AppDelegate.swift in Sources */,
+				AFE83C6621DD337D00A4FC2C /* ConnectivityNotifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
